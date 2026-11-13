@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids</title>
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .container {
+            display: grid;
+            grid-template-areas: "header header header"
+                                "sidebar content1 content1"
+                                "sidebar content2 content3"
+                                "footer footer footer"
+            /* grid-template-columns: 1fr 2fr 4fr ; */
+
+            /* grid-template-rows: 1fr 2fr; */
+            /* border: 1px solid black; */
+
+
+
+
+            /* gap:30px 100px; */
+            /* row-gap: 30px;
+            column-gap: 50px; */
+        }
+
+        .box{
+            height: 40px;
+            border:1px solid black;
+        }
+        #box1{
+            grid-area: header;
+            background-color: red;
+        }
+        #box2{
+            grid-area: sidebar;
+        }
+        #box3{
+            grid-area: content1;
+        }
+                #box4{
+            grid-area: content2;
+        }
+                #box5{
+            grid-area: content3;
+        }
+                #box6{
+            grid-area: footer;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">header</div>
+        <div class="box" id="box2">sidebar</div>
+        <div class="box" id="box3">content1</div>
+        <div class="box" id="box4">content2</div>
+        <div class="box" id="box5">content3</div>
+        <div class="box" id="box6">footer</div>
+
+    </div>
+</body>
+
+</html>

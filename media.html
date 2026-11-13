@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        nav>ul>li>a{
+    text-decoration: none;
+}
+nav>ul>li{
+    list-style: none;
+}
+header{
+    display: flex;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li{
+    margin-left: 100px;
+}
+header>h2{
+    margin-left: 40px;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    gap:80px;
+    margin-top:30px;
+
+
+}
+.section1 img{
+    width: 400px;
+    height: 500px;
+}
+.leftdiv{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.leftdiv button{
+    width:100px;
+    margin:2px auto;
+}
+
+
+.cards{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+            flex-wrap: wrap;
+
+}
+.cards img{
+    width:70px;
+    height: 70px;
+}
+.cardindi{
+    border:2px solid black;
+    padding: 30px;
+    margin:20px;
+    width: 200px;
+}
+@media screen and  (max-width:740px){
+
+    .leftdiv{
+        width: 800px;
+    }
+    .section1 img{
+        width: 250px;
+    }
+    
+}
+@media  screen and (max-width:530px) {
+    nav>ul{
+        flex-direction: column;
+}
+
+
+}
+
+@media screen  and (max-width:440px){
+    .section1{
+        flex-direction: column;
+
+    }
+    .leftdiv{
+        width: 80%;
+        margin: auto;
+    }
+    .section1 img{
+        margin-left: 50px;
+    }
+    nav>ul>li{
+    margin-left: 20px;
+}
+
+    
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h2>LOGO</h2>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section1">
+        <div class="leftdiv">
+            <h2>Heading Grow</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores dolor qui doloremque inventore quod doloribus amet provident culpa. Aut consectetur optio nobis nihil iste ipsam magni porro error? Eligendi deserunt nihil sit nostrum doloribus esse quas veritatis ipsam iste est tempora vel alias, commodi illo maxime labore libero voluptatibus? Minus.</p>
+            <button>Join us</button>
+        </div>
+        <div class="rightdiv">
+            <img src="flowerimg.jpeg" alt="">
+
+
+        </div>
+    </div>
+    <div class="cards">
+        <div class="cardindi">
+            <img src="flowerimg.jpeg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, corporis!</p>
+            <button>JOIN CARD</button>
+        </div>
+        <div class="cardindi">
+            <img src="flowerimg.jpeg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, corporis!</p>
+            <button>JOIN CARD</button>
+        </div>
+
+
+        <div class="cardindi">
+            <img src="flowerimg.jpeg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, corporis!</p>
+            <button>JOIN CARD</button>
+        </div>
+        <div class="cardindi">
+            <img src="flowerimg.jpeg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, corporis!</p>
+            <button>JOIN CARD</button>
+        </div>
+
+
+    </div>
+
+
+    
+</body>
+</html>
